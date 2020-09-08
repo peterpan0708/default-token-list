@@ -1,35 +1,33 @@
 {
-  "name": "@uniswap/default-token-list",
-  "version": "1.3.1",
-  "description": "◦ The Uniswap default token list",
-  "main": "build/uniswap-default.tokenlist.json",
+  "name": "@sipswap/default-token-list",
+  "version": "1.0.0",
+  "description": "◦ The Sipswap default token list",
+  "main": "build/sipswap-default.tokenlist.json",
   "scripts": {
     "test": "mocha",
     "build": "rimraf build && mkdir -p build && node src/write.js > build/uniswap-default.tokenlist.json",
     "prepublishOnly": "npm test && npm run build"
   },
   "files": [
-    "build/uniswap-default.tokenlist.json"
+    "build/sipswap-default.tokenlist.json"
   ],
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Uniswap/default-token-list.git"
+    "url": "https://github.com/peterpan0708/default-token-list"
   },
   "keywords": [
     "uniswap",
     "default",
     "token",
-    "list"
+    "list",
+    "sipswap"
   ],
-  "author": "Moody Salem",
+  "author": "Peterpan0708",
   "license": "GPL-3.0-or-later",
-  "bugs": {
-    "url": "https://github.com/Uniswap/default-token-list/issues"
-  },
-  "homepage": "https://github.com/Uniswap/default-token-list#readme",
+  "homepage": "https://github.com/Sipswap/default-token-list#readme",
   "devDependencies": {
     "@ethersproject/address": "^5.0.2",
-    "@uniswap/token-lists": "^1.0.0-beta.8",
+    "@sipswap/token-lists": "^1.0.0-beta.8",
     "ajv": "^6.12.3",
     "chai": "^4.2.0",
     "mocha": "^8.0.1",
